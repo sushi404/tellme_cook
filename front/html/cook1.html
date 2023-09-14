@@ -1,0 +1,37 @@
+<!--作成：ryuuichi-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="../css/cookstyle.css" type="text/css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>おしえてクック</title>
+    </head>
+    <body>
+        <h1>おしえてクック</h1>
+
+        <div class="container">  
+            <p class="txt">食材を入力してください（例: にんじん じゃがいも 豚肉）</p>
+            <input class="textbox" type="text" id="food" name="food" placeholder="テキストを入力">
+        </div>
+        
+        <div class="container">
+            <p class="txt">希望する味を入力してください（例: 辛い 甘い 和風 洋風 など）</p> 
+            <input class="textbox" type="text" id="genre" name="genre" placeholder="テキストを入力">
+        </div>
+
+        <div class="container">
+             <button onclick="sendData()" class="pagebutton">レシピ生成</button><br>
+        </div>
+
+        <div class="container"> 
+            <a class="pagebutton" href="cook2.html">決定</a>
+        </div>
+
+        <p id="result"></p>
+
+    <script src="../toServer.js"></script>
+
+
+    </body>
+</html>
